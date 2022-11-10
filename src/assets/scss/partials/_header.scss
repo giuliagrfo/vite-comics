@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 1rem;
+
+    .navbar {
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 1rem;
+            color: $soft_dark;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &.active {
+                color: $secondary;
+                border-bottom: 4px solid $secondary;
+            }
+        }
+
+    }
+}
