@@ -4,7 +4,6 @@ footer {
     background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem 0;
 
     h3 {
         color: $light;
@@ -17,7 +16,7 @@ footer {
 
         li {
             list-style: none;
-            padding: 0.25rem;
+            padding: 0.25rem 0;
 
             a {
                 text-decoration: none;
@@ -26,8 +25,49 @@ footer {
         }
     }
 
-    img {
-        position: absolute;
-        top: 350px;
+    .ft_logo {
+        img {
+            position: absolute;
+            top: 350px;
+        }
+    }
+
+
+    .call_to_action {
+        background-color: $dark;
+        position: relative;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $light;
+            border: 2px solid $secondary;
+            padding: 0.5rem;
+        }
+
+        h3 {
+            color: $secondary;
+        }
+
+        .sign_up {
+            display: flex;
+        }
+
+        .social {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            h3 {
+                margin: 0 1rem;
+            }
+
+            img {
+                margin: 0 0.5rem;
+            }
+        }
     }
 }
