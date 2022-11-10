@@ -1,6 +1,120 @@
 <script>
 export default {
-    name: 'SiteFooter'
+    name: 'SiteFooter',
+    data() {
+        return {
+            dc_comics: [
+                {
+                    text: 'Characters',
+                    href: '#'
+                },
+                {
+                    text: 'Comics',
+                    href: '#'
+                },
+                {
+                    text: 'Movies',
+                    href: '#'
+                },
+                {
+                    text: 'Tv',
+                    href: '#'
+                },
+                {
+                    text: 'Games',
+                    href: '#'
+                },
+                {
+                    text: 'Videos',
+                    href: '#'
+                },
+                {
+                    text: 'News',
+                    href: '#'
+                }
+
+            ],
+            shop: [
+                {
+                    text: 'Shop DC',
+                    href: '#',
+                },
+                {
+                    text: 'Shop DC Collectibles',
+                    href: '#',
+                }
+            ],
+            dc: [
+                {
+                    text: 'Terms Of Use',
+                    href: '#'
+                },
+                {
+                    text: 'Privacy Policy',
+                    href: '#'
+                },
+                {
+                    text: 'Ad Choices',
+                    href: '#'
+                },
+                {
+                    text: 'Advertising',
+                    href: '#'
+                },
+                {
+                    text: 'Jobs',
+                    href: '#'
+                },
+                {
+                    text: 'Subscriptions',
+                    href: '#'
+                },
+                {
+                    text: 'Talent Workshops',
+                    href: '#'
+                },
+                {
+                    text: 'CPSC Certificates',
+                    href: '#'
+                },
+                {
+                    text: 'Ratings',
+                    href: '#'
+                },
+                {
+                    text: 'Shop Help',
+                    href: '#'
+                },
+                {
+                    text: 'Contact Us',
+                    href: '#'
+                }
+            ],
+            sites: [
+                {
+                    text: 'DC',
+                    href: '#'
+                },
+                {
+                    text: 'MAD Magazine',
+                    href: '#'
+                },
+                {
+                    text: 'DC Kids',
+                    href: '#'
+                },
+                {
+                    text: 'DC Universe',
+                    href: '#'
+                },
+                {
+                    text: 'DC Power Visa',
+                    href: '#'
+                }
+            ]
+        }
+    }
+
 }
 
 
@@ -16,39 +130,19 @@ export default {
                         <div class="col dc_comics gy-5">
                             <h3>Dc Comics</h3>
                             <ul>
-                                <li>
-                                    <a href="#">Characters</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Movies</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tv</a>
-                                </li>
-                                <li>
-                                    <a href="#">Games</a>
-                                </li>
-                                <li>
-                                    <a href="#">Videos</a>
-                                </li>
-                                <li>
-                                    <a href="#">News</a>
+                                <li v-for="item in dc_comics">
+                                    <a :href="item.href">
+                                        {{ item.text }}
+                                    </a>
                                 </li>
                             </ul>
                             <div class="row">
                                 <div class="col shop">
                                     <h3>Shop</h3>
                                     <ul>
-                                        <li>
-                                            <a href="#">Shop DC</a>
+                                        <li v-for="item in shop">
+                                            <a :href="item.href">{{ item.text }}</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Shop DC Collectibles</a>
-                                        </li>
-
                                     </ul>
                                 </div>
                             </div>
@@ -56,67 +150,27 @@ export default {
                         <div class="col dc gy-5">
                             <h3>Dc</h3>
                             <ul>
-                                <li>
-                                    <a href="#">Terms Of Use</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Ad Choices</a>
-                                </li>
-                                <li>
-                                    <a href="#">Advertising</a>
-                                </li>
-                                <li>
-                                    <a href="#">Jobs</a>
-                                </li>
-                                <li>
-                                    <a href="#">Subscriptions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Talent Workshops</a>
-                                </li>
-                                <li>
-                                    <a href="#">CPSC Certificates</a>
-                                </li>
-                                <li>
-                                    <a href="#">Ratings</a>
-                                </li>
-                                <li>
-                                    <a href="#">Shop Help</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
+                                <li v-for="item in dc">
+                                    <a :href="item.href">
+                                        {{ item.text }}
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col sites gy-5">
                             <h3>Sites</h3>
                             <ul>
-                                <li>
-                                    <a href="#">DC</a>
+                                <li v-for="item in sites">
+                                    <a :href="item.href">
+                                        {{ item.text }}
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="#">MAD Magazine</a>
-                                </li>
-                                <li>
-                                    <a href="#">DC Kids</a>
-                                </li>
-                                <li>
-                                    <a href="#">DC Universe</a>
-                                </li>
-                                <li>
-                                    <a href="#">DC Power Visa</a>
-                                </li>
-
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="col ft_logo">
-                    <img src="../assets/img/dc-logo-bg.png" alt="">
                 </div>
             </div>
         </div>

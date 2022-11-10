@@ -26,10 +26,9 @@ footer {
     }
 
     .ft_logo {
-        img {
-            position: absolute;
-            top: 350px;
-        }
+        background-image: url('../img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 

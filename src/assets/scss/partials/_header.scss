@@ -12,16 +12,20 @@ header {
         a {
             display: inline-block;
             text-decoration: none;
-            margin: 0 1rem;
             color: $soft_dark;
             text-transform: uppercase;
             font-weight: bold;
+            padding: 1rem;
 
             &.active {
                 color: $secondary;
                 border-bottom: 4px solid $secondary;
-                padding-bottom: 60px;
-                margin-bottom: -60px;
+                padding-bottom: 57px;
+                margin-bottom: -57px;
+            }
+
+            &:hover {
+                background-color: #79797976;
             }
         }
 
