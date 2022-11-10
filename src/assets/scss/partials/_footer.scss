@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+
+    h3 {
+        color: $light;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-bottom: 1rem;
+
+        li {
+            list-style: none;
+            padding: 0.25rem;
+
+            a {
+                text-decoration: none;
+                color: $soft;
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 350px;
+    }
+}
