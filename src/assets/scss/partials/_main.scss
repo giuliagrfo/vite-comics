@@ -5,6 +5,13 @@ main {
         background-color: $primary;
         padding: 3rem 0;
         color: white;
+
+        img {
+            width: 300px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: center top;
+        }
     }
 
     .navbar {
