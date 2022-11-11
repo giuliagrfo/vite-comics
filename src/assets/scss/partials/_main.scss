@@ -1,6 +1,11 @@
 @use 'variables' as*;
 
 main {
+    .jumbo-top {
+        height: 400px;
+        background-image: url('../img/jumbotron.jpg');
+    }
+
     .content {
         background-color: $primary;
         padding: 1rem 0;
@@ -34,8 +39,5 @@ main {
         }
     }
 
-    .jumbo-top {
-        height: 400px;
-        background-image: url('../img/jumbotron.jpg');
-    }
+
 }

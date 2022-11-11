@@ -1,5 +1,5 @@
 <script>
-import Card from "./Card.vue";
+import Card from "./CardItem.vue";
 import comics from "../data/comics.js";
 
 export default {
@@ -36,30 +36,36 @@ export default {
 
 .content {
     position: relative;
-}
 
-.current_series {
-    position: absolute;
-    bottom: 95%;
-    left: 10%;
-    padding: 1rem 2.5rem;
-    background-color: $secondary;
-    text-transform: uppercase;
-}
-
-.load {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-
-    a {
+    .current_series {
+        position: absolute;
+        bottom: 95%;
+        left: 10%;
+        padding: 1rem 2.5rem;
         background-color: $secondary;
-        padding: 0.5rem 3rem;
-        font-size: 13px;
-        font-weight: bold;
         text-transform: uppercase;
-        text-decoration: none;
-        color: white;
+    }
+
+    .load {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+
+        a {
+            background-color: $secondary;
+            padding: 0.5rem 3rem;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                background-color: transparent;
+                border: 2px solid $secondary;
+
+            }
+        }
     }
 }
 </style>

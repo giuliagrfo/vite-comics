@@ -44,6 +44,10 @@ footer {
             color: $light;
             border: 2px solid $secondary;
             padding: 0.5rem;
+
+            &:hover {
+                background-color: $secondary;
+            }
         }
 
         h3 {
