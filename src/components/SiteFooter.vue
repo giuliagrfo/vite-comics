@@ -116,8 +116,6 @@ export default {
     }
 
 }
-
-
 </script>
 
 <template>
@@ -193,14 +191,9 @@ export default {
                             <img src="../assets/img/footer-pinterest.png" alt="">
                             <img src="../assets/img/footer-periscope.png" alt="">
                         </div>
-
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-
     </footer>
 </template>

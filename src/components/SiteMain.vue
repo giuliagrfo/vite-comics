@@ -9,8 +9,6 @@ export default {
         Banner
     }
 }
-
-
 </script>
 
 <template>
@@ -25,5 +23,4 @@ export default {
 
         </div>
     </main>
-
 </template>

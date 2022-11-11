@@ -48,8 +48,6 @@ export default {
         }
     }
 }
-
-
 </script>
 
 <template>
@@ -62,10 +60,7 @@ export default {
                 <a :href="item.href" v-for="item in menu" :class="item.text === 'Comics' ? 'active' : ''">
                     {{ item.text }}
                 </a>
-
             </nav>
-
-
         </header>
     </div>
 

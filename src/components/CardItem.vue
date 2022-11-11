@@ -17,6 +17,7 @@ export default {
     </div>
 </template>
 
+
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as*;
 
