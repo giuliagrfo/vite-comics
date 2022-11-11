@@ -62,15 +62,7 @@ export default {
                 <a :href="item.href" v-for="item in menu" :class="item.text === 'Comics' ? 'active' : ''">
                     {{ item.text }}
                 </a>
-                <!-- <a href="#" class="active">Comics</a>
-                <a href="#">Movies</a>
-                <a href="#">Tv</a>
-                <a href="#">Games</a>
-                <a href="#">Collectibles</a>
-                <a href="#">Videos</a>
-                <a href="#">Fans</a>
-                <a href="#">News</a>
-                <a href="#">Shop</a> -->
+
             </nav>
 
 
