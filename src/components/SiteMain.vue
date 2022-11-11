@@ -13,6 +13,9 @@ export default {
 <template>
     <main id="site_main">
         <div class="jumbotron">
+            <div class="jumbo-top">
+
+            </div>
             <CardsList />
 
 

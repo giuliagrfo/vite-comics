@@ -11,6 +11,17 @@ export default {
 <template>
     <div class="col gy-5">
         <img :src="image" :alt="title">
-        <h4>{{ title }}</h4>
+        <div class="title">
+            <span>{{ title }}</span>
+        </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as*;
+
+.title {
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+</style>

@@ -3,7 +3,7 @@
 main {
     .content {
         background-color: $primary;
-        padding: 3rem 0;
+        padding: 1rem 0;
         color: white;
 
         img {
@@ -32,5 +32,10 @@ main {
                 margin-right: 1rem;
             }
         }
+    }
+
+    .jumbo-top {
+        height: 400px;
+        background-image: url('../img/jumbotron.jpg');
     }
 }
